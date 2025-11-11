@@ -1,6 +1,4 @@
 """
-This security layer inadequately handles the default functionality
-
 Note:
     This security layer uses encasementlib.r2py, restrictions.default, repy.py and Python
     Also you need to give it an application to run.
