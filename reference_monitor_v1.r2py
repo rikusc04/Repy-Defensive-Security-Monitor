@@ -27,7 +27,6 @@ OBJC = "objc"
 # If someone writes to default file, then you do not delete default file (because default file must be opened to perform a write), but you delete all files that were created
 # If someone creates a default file, then you do not delete default file (because default file must be opened to perform a create), but you delte all files that were created
 
-
 class LPFile():
     mycontext['closed_files'] = [] # will store the names of the closed files in a list
     mycontext['opened_files'] = [] # will store the names of the opened files in a list
@@ -85,7 +84,7 @@ class LPFile():
         else:
             self.LPfile = openfile(filename, create)
             mycontext['opened_files'].append(filename)
-            
+
         self.filename = filename
 
     def readat(self, num_bytes, offset): # method, can only be called on a LPFile object
@@ -130,9 +129,7 @@ def validate_filename(filename):
         if char in filename:
             return 1 # invalid file name, cannot open
     if filename in listfiles():    
-        return 2 # file exists in directory
-        
-        
+        return 2 # file exists in directory 
         
 def LPopenfile(filename, create):
     return LPFile(filename, create)
@@ -145,7 +142,7 @@ def LPremovefile(filename):
         raise RepyArgumentError
     if filename in mycontext['opened_files']: # file is already open
         raise FileInUseError
-    
+
     if filename == 'default': # if the default is being removed, remove all closed files
         count = 1
         for file_name in mycontext['closed_files']:
@@ -163,7 +160,6 @@ def LPremovefile(filename):
                 removefile(file_name_to_remove) # remove that file
         if filename not in mycontext['opened_files'] and filename in listfiles():
             removefile(filename)
-
 
 # The code below sets up type checking and variable hiding for you.
 # You should not change anything below this point.
