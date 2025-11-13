@@ -1,2 +1,3 @@
 # Repy-Defensive-Security-Monitor
 This project implements a reference monitor that oversees file operations in Repy. In addition to the default Repy behavior, the monitor adds support for a default file to be used when files are opened without creating them first. This defense monitor ensures that program follows certain rules, preventing potential unauthorized actions.
+There are two versions. The first version is the reference monitor that was used in a red-team blue-team simulation. It enforces file constraints. This reference monitor had a 80% defense rate against attacks. The second version is the updated version, with new changes integrated to the reference monitor.
