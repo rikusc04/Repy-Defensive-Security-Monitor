@@ -10,7 +10,7 @@
     - An updated version with additional changes and improvements integrated into the monitor.
 - Attack programs used to evaluate the monitor are provided in the `attack_cases/` directory.
 
-## Repy Runtime Dependency (Required)
+**Repy Runtime Dependency (Required)**
 - This repository **does not include the Repy runtime**.
 - To run this project, you must have the following files from a Repy distribution available:
   - `repy.py`
@@ -19,13 +19,13 @@
 - These files are part of the Repy runtime and are **external dependencies**, not owned or distributed by this repository.
 - The monitor and attack cases in this repository are intended to be executed **using the Repy interpreter**.
 
-## Python Version Requirement
+**Python Version Requirement**
 - Repy requires **Python 2.7**.  
 - Python 3 is **not supported**.
 - This repository includes a `.python-version` file that pins the required Python runtime to **2.7.18** for users who manage Python versions with `pyenv`
 - The file does not bundle Python itself; it simply declares the expected runtime version for this project.
 
-## Running the Monitor
+**Running the Monitor**
 - Run the monitor from the directory that contains the `repy.py` file.
 - Example:
   ```bash
