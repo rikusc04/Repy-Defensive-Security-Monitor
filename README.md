@@ -35,7 +35,7 @@
   ```
 - Or, a more general example:
   ```bash
-  python repy.py restrictions.default encasementlib.r2py {name_of_reference_monitor}.r2py {name_of_attack_case_directory}/{name_of_attack_case}.r2py
+  python repy.py restrictions.default encasementlib.r2py {path/to/reference_monitor}.r2py {path/to/attack_case_directory}/{name_of_attack_case}.r2py
   ```
 
 ## Notes
