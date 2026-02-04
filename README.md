@@ -18,7 +18,7 @@
   - `restrictions.default`
 - These files are part of the Repy runtime and are **external dependencies**, not owned or distributed by this repository
 - The Repy runtime is maintained as part of the **Seattle Testbed** project. Official build and setup instructions can be found here:
-  > https://github.com/SeattleTestbed/docs/blob/master/Contributing/BuildInstructions.md#prerequisites
+  > https://github.com/SeattleTestbed/docs/blob/master/Contributing/BuildInstructions.md
 - The reference monitor and attack cases in this repository are intended to be executed **using the Repy interpreter**
 
 ## Python Version Requirement
